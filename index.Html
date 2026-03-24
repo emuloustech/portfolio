@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Emmanuel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<nav>
+    <h2>Emmanuel</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+    <h1>Hello, I'm Emmanuel</h1>
+    <p>Cyber Security Student | Web Designer</p>
+    <button onclick="scrollToSection('contact')">Contact Me</button>
+</section>
+<!-- ABOUT -->
+<section id="about">
+    <h1>About Me</h1>
+    <p>I am passionate about Cyber Security and Web Development. I enjoy building secure and modern websites.</p>
+</section>
+<!-- PROJECTS -->
+<section id="projects">
+    <h1>My Projects</h1>
+    <div class="card-container">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal website to showcase my skills.</p>
+        </div>
+  <div class="card">
+            <h3>Cyber Security Research</h3>
+            <p>Study on common cyber attacks and prevention.</p>
+        </div>
+    </div>
+</section>
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
